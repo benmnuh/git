@@ -1,0 +1,118 @@
+.case-studies-section {
+  padding: 124px 0 112px;
+  background-color: $primary-white;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__content {
+    @include make-col(12);
+    text-align: center;
+  }
+
+  &__title {
+    color: $dark-grey;
+    font-family: $font-sourcesanspro-regular;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+  }
+
+  &__description {
+    color: $gray;
+    font-family: $font-opensans-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.1;
+  }
+}
+
+.case-studies {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.case-study {
+  //position: relative;
+  //display: flex;
+  //flex-wrap: wrap;
+  &-content {
+    @include make-col(6);
+    background-color: $white;
+  }
+
+  &__content {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+
+  &__title {
+    color: $dark-grey;
+    font-family: $font-opensans-semibold;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+  }
+
+  &__separator {
+    width: 41px;
+    border: 1px solid $dark-grey;
+    margin: 25px auto;
+    display: block;
+  }
+
+  &__description {
+    color: $gray;
+    font-family: $font-sourcesanspro-regular;
+    font-size: 14px;
+    //font-weight: bold;
+    line-height: 1.75;
+    letter-spacing: 1.05px;
+  }
+
+  &__btn {
+    padding: 19px 38px 18px;
+    text-transform: uppercase;
+  }
+
+  &__icon-wrapper {
+
+    position: relative;
+    @include size(84px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px auto 54px;
+
+    &:before {
+      background-color: $primary-red;
+      content: '';
+      position: absolute;
+      @include size(inherit);
+      display: block;
+      transform: translate(-50%, -50%) rotate(45deg);
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+    }
+  }
+
+  &-images {
+    @include make-col(6);
+  }
+
+  &__image {
+    @extend %background-styles;
+  }
+}

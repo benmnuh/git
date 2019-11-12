@@ -1,0 +1,9 @@
+.tab-content {
+  &.works-category-content {
+    display: none;
+
+    &.current {
+      display: flex;
+    }
+  }
+}

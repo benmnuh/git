@@ -1,0 +1,38 @@
+@import "common/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+// Import Slick
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+@import "common/global";
+@import "common/helpers";
+@import "common/mixins";
+@import "layouts/header";
+@import "layouts/footer";
+@import "components/buttons";
+@import "components/tabs";
+@import "components/social-media";
+@import "components/home/hero-slider";
+@import "components/home/features";
+@import "components/home/two-columns-image-left";
+@import "components/home/services";
+@import "components/home/recent-works";
+@import "components/home/stats";
+@import "components/home/case-studies";
+@import "components/home/pricing";
+@import "components/home/team";
+@import "components/home/clients";
+@import "components/home/posts";
+@import "components/home/contact";
+@import "components/home/cta";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";

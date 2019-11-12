@@ -1,0 +1,9 @@
+.social-media {
+
+}
+
+.social-item {
+  &:not(:last-of-type) {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,114 @@
+.features-section {
+  border-bottom: 1px solid $lighter-gray;
+  padding: 60px 0 106px;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__row {
+    @include make-row();
+    @include media-breakpoint-up(lg) {
+      flex-wrap: nowrap;
+    }
+    //@include media-breakpoint-down(md) {
+    //  flex-wrap: wrap;
+    //}
+  }
+}
+
+.features {
+  &__item {
+    //@include make-col(3);
+    @include make-col-ready();
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    @include media-breakpoint-up(lg) {
+      &:not(:last-of-type) {
+        padding-right: 56px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      @include make-col(6);
+      box-sizing: border-box;
+      margin-bottom: 70px;
+      &:nth-of-type(2n + 1) {
+        padding-right: 25px;
+      }
+      &:nth-of-type(2n) {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+.feature {
+  text-align: center;
+
+  &:hover {
+    .feature__image-wrapper:before {
+      border-color: $primary-red;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .feature__title {
+      color: $primary-red;
+    }
+  }
+
+  &__title {
+    color: $dark-grey;
+    font-family: $font-opensans-semibold;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+    margin-bottom: 13px;
+  }
+
+  &__description {
+    color: $gray;
+    font-family: $font-sourcesanspro-regular;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.9px;
+  }
+
+  &__image {
+    position: relative;
+
+  }
+
+  &__image-wrapper {
+    position: relative;
+    @include size(73px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 29px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      @include size(inherit);
+      border: 1px solid rgba(153, 153, 153, 0.25);
+      display: block;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__separator {
+    width: 41px;
+    border: 1px solid $dark-grey;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}

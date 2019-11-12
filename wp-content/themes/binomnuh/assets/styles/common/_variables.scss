@@ -1,0 +1,51 @@
+/** Import Bootstrap functions */
+/* stylelint-disable */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+/* assets/styles/common/_variables.scss */
+// Slick Carousel font path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{str-replace(str-replace(#{$navbar-dark-color}, "(", "%28"), ")", "%29")}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{str-replace(str-replace(#{$navbar-light-color}, "(", "%28"), ")", "%29")}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+$white: #fff;
+$primary-white: #f4f5f9;
+$warm-white: #f1ebe7;
+$gray-white: #d8d9db;
+$light-red: #e74e3e;
+$primary-red: #e74c3c;
+$light-black: #202020;
+$light-gray: #cbc6c0;
+$lighter-gray: #e6e7eb;
+$gray: #999999;
+$dark-grey: #6a6a6a;
+$darker-grey: #303030;
+
+// Fonts
+$font-opensans-regular: 'Open Sans', sans-serif;
+$font-opensans-regular-italic: 'Open Sans Italic', sans-serif;
+$font-opensans-bold: 'Open Sans - Bold', sans-serif;
+$font-opensans-bold-italic: 'Open Sans - Bold Italic', sans-serif;
+$font-opensans-extrabold: 'Open Sans - Extrabold', sans-serif;
+$font-opensans-extrabold-italic: 'Open Sans - Extrabold Italic', sans-serif;
+$font-opensans-light: 'Open Sans - Light', sans-serif;
+$font-opensans-light-italic: 'Open Sans - Light Italic', sans-serif;
+$font-opensans-semibold: 'Open Sans - Semibold', sans-serif;
+$font-opensans-semibold-italic: 'Open Sans - Semibold Italic', sans-serif;
+
+$font-sourcesanspro-regular: 'Source Sans Pro', sans-serif;
+$font-sourcesanspro-regular-italic: 'Source Sans Pro Italic', sans-serif;
+$font-sourcesanspro-bold: 'Source Sans Pro - Bold', sans-serif;
+$font-sourcesanspro-bold-italic: 'Source Sans Pro - Bold Italic', sans-serif;
+$font-sourcesanspro-black: 'Source Sans Pro - Black', sans-serif;
+$font-sourcesanspro-black-italic: 'Source Sans Pro - Black Italic', sans-serif;
+$font-sourcesanspro-light: 'Source Sans Pro - Light', sans-serif;
+$font-sourcesanspro-light-italic: 'Source Sans Pro - Light Italic', sans-serif;
+$font-sourcesanspro-extralight: 'Source Sans Pro - Extralight', sans-serif;
+$font-sourcesanspro-extralight-italic: 'Source Sans Pro - Extralight Italic', sans-serif;
+$font-sourcesanspro-semibold: 'Source Sans Pro - Semibold', sans-serif;
+$font-sourcesanspro-semibold-italic: 'Source Sans Pro - Semibold Italic', sans-serif;

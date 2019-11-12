@@ -1,0 +1,95 @@
+.team-section {
+  padding: 124px 0 112px;
+  height: 745px;
+  position: relative;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__content {
+    @include make-col(12);
+    text-align: center;
+  }
+
+  &__title {
+    color: $white;
+    font-family: $font-sourcesanspro-regular;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+  }
+
+  &__description {
+    color: $white;
+    font-family: $font-opensans-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.1;
+  }
+
+}
+
+#chartContainer {
+  position: absolute;
+  bottom: 0;
+  height: 650px;
+}
+
+.teamImageWrapper {
+  height: 56px;
+  width: 57px;
+  opacity: 0;
+
+  &:not(:nth-of-type(3)):not(:last-of-type) {
+    border: 3px solid #e74c3c;
+    border-radius: 100%;
+    color: red;
+    opacity: 1;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.54);
+      @include overlay(rgba(231, 76, 60, 0.5), overlay);
+    }
+  }
+}
+
+
+.canvasjs-chart-tooltip {
+  margin-bottom: -140px;
+  margin-left: 100px;
+  box-shadow: none !important;
+
+  div {
+    text-align: center;
+  }
+
+  &:before {
+    content: '';
+    background-color: $white;
+    width: 1px;
+    height: 50px;
+  }
+}
+
+.team-member-name {
+  color: $primary-red;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  font-family: $font-opensans-semibold;
+}
+
+.team-member-position {
+  letter-spacing: 1.4px;
+  color: $white;
+  font-family: $font-sourcesanspro-regular;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23.99px;
+}
